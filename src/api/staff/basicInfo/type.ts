@@ -3,10 +3,10 @@ export interface param{
   name?: string,
   star?: string,
   type?: string,
-  limit: number,
-  page: number,
-  orderName: string,
-  order: string
+  limit?: number,
+  page?: number,
+  orderName?: string,
+  order?: string
 }
 //人员基本信息
 export interface Basic{
@@ -25,5 +25,6 @@ export type BasicArr = Basic[]
 export interface ResponseData{
   status: number,
   message: string,
+  total: number,
   data?: BasicArr
 }

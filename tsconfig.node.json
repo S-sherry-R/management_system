@@ -16,7 +16,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noEmit": true,
-    "isolatedModules": true,
+    "isolatedModules": false,/* 检查未使用的变量 */
     "skipLibCheck": true,
     "noUncheckedSideEffectImports": true
   },

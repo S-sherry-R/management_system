@@ -96,6 +96,12 @@ const thethree = ref<boolean>(false)
 const thefour = ref<boolean>(false)
 const thefive = ref<boolean>(false)
 const thesix = ref<boolean>(false)
+const topclick1=()=>{}
+const topclick2=()=>{}
+const topclick3=()=>{}
+const topclick4=()=>{}
+const topclick5=()=>{}
+const topclick6=()=>{}
 </script>
 
 <style scoped lang="scss">

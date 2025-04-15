@@ -20,7 +20,7 @@
       <el-form-item style="float: right">
         <el-select v-model="param.star" placeholder="星级" clearable style="width: 180px;margin-right: 20px" @change="searchTable()">
           <el-option v-for="item in starOptions" :key="item.value" :label="item.label" :value="item.value">
-            <el-icon v-for="item in item.value"><StarFilled /></el-icon>
+            <el-icon v-for="i in item.value" :key="i"><StarFilled /></el-icon>
           </el-option>
         </el-select>
         <el-select v-model="param.type" placeholder="类型" clearable style="width: 240px" @change="searchTable()">
@@ -42,7 +42,7 @@
       <el-table-column property="enName" label="英文名" align="center" show-overflow-tooltip/>
       <el-table-column property="star" label="星级" align="center" show-overflow-tooltip sortable="custom">
         <template #default="scope">
-          <el-icon v-for="item in scope.row.star" color="#5a7aff"><StarFilled /></el-icon>
+          <el-icon v-for="item in scope.row.star" :key="item" color="#5a7aff"><StarFilled /></el-icon>
         </template>
       </el-table-column>
       <el-table-column property="inspiration" label="灵感" align="center" show-overflow-tooltip>
@@ -158,7 +158,7 @@
   </el-dialog>
 </template>
 <script setup lang="ts">
-import { ref, onMounted, reactive, nextTick, watch } from "vue";
+import { ref, onMounted, reactive, watch } from "vue";
 //引入基础api
 import {deleteBasic, getBasicInfo, updateOrAddBasic} from '@/api/staff/basicInfo/index.ts'
 //引入信息类型
@@ -199,7 +199,7 @@ let total = ref<number>(0)
 //排序
 const order = ref<string>('DESC')
 //获取灵感图片
-const getInsImg = (str) => {
+const getInsImg = (str:string) => {
   let name = ''
   for (let item of insOption) {
     if(str.indexOf(item.value) !== -1){
