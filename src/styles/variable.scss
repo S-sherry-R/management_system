@@ -1,0 +1,7 @@
+@use "@/styles/elementVariable.scss" as *;//element-plus自定义主题变量
+//scss全局变量
+$base-color: #5a7aff;
+$first-color:#2f83be; //第二泛用颜色
+$line-color:#D8D9D8; //线条颜色
+$hover-color:#e9f2ff; //鼠标经过的颜色
+$menu-collapse-width:70px; //菜单收起的宽度

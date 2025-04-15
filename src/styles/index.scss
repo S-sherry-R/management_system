@@ -1,0 +1,15 @@
+//清除默认样式
+@use 'scss-reset';
+
+//滚动条样式
+::-webkit-scrollbar{
+  width: 8px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #939393;
+  border-radius: 8px;
+}
+
+
+
+
