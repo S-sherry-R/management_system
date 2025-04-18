@@ -68,7 +68,7 @@
       </div>
     </el-col>
   </el-row>
-  神秘术：戒律•其五Ⅰ   劝勉•其五Ⅰ    规章之外的咏叹诗
+  <div style="display: flex;justify-content: center"><UnderDevelopment></UnderDevelopment></div>
 </template>
 <script setup lang="ts">
 //引入用户相关仓库
