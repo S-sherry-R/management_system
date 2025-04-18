@@ -4,7 +4,7 @@
 
 <template>
 <div class="dev">
-  <img src="/public/deving.png">
+  <img src="/deving.png">
   <div>开发中......</div>
 </div>
 </template>
